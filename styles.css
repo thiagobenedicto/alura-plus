@@ -1,0 +1,146 @@
+:root {
+    --text-main: #FFFFFF;
+    --text-descriptions: #C0C0C0;
+    --buttons: #167BF7;
+    --buttons-hover-effect: #4897f8;
+    --background: #00030C;
+    --font-main: 'Inter', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--background);
+    color: var(--text-main);
+    font-family: var(--font-main);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.main {
+    background-image: url("img/Background.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+    text-align: center;
+}
+
+.container__box {
+    margin: 0 6em;
+}
+
+.container__title {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.container__image {
+    margin: 1em 0 2em 0;
+}
+
+.container__button {
+    background-color: var(--buttons);
+    border-radius: 8px;
+    padding: 1em;
+    color: var(--text-main);
+    text-decoration: none;
+    display: block;
+    margin-bottom: 1em;
+}
+
+.container__button:hover {
+    background-color: var(--buttons-hover-effect);
+}
+
+.container__button_2 {
+    background-color: transparent;
+    border: 2px solid var(--text-main);
+}
+
+.container__button_description {
+    color: var(--text-descriptions);
+    font-size: 12px;
+}
+
+.container__image_secondary {
+    width: 70%;
+    padding: 3em;
+}
+
+.secondary {
+    align-items: center;
+    margin: 0 6em;
+}
+
+.container__subtittle {
+    font-weight: 700;
+    font-size: 48px;
+    margin-bottom: 0.1em;
+}
+
+.container__description {
+    color: var(--text-descriptions);
+}
+
+.button__secondary {
+    display: inline-block;
+    margin-top: 1em;
+}
+
+.devices {
+    text-align: center;
+}
+
+.devices__title {
+    font-size: 48px;
+    color: var(--text-main);
+}
+
+.devices__list {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 5em 0;
+}
+
+.devices__item__text {
+    font-size: 32px;
+    color: var(--text-main);
+}
+
+.footer {
+    text-align: center;
+}
+
+.footer__list {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    gap: 16px;
+    margin: 2em 0;
+}
+
+.footer__list__link a{
+    font-size: 16px;
+    color: var(--text-main);
+    text-decoration: none;
+}
+
+.footer__list__link a:hover {
+    color: var(--text-descriptions);
+}
+
+.footer__text {
+    font-size: 14px;
+    color: var(--text-descriptions);
+    margin-bottom: 2em;
+}
